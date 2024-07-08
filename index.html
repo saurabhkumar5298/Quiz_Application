@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div id="start-rules">
+      <h2>Welcome to Ninja's Quizz.</h2>
+      <h3>Rules:</h3>
+      <ul>
+        <li>Your quiz will be end in 1 minute.</li>
+        <li>
+          Your quiz will contain infinite number of questions as we are
+          fetching them from API.
+        </li>
+        <li>You would be provided 10 marks for every correct answer.</li>
+        <li>There is no negative marking.</li>
+        <li>At the end of the game, your score will be displayed.</li>
+      </ul>
+    </div>
+    <div id="startScreen">
+      <button id="startQuiz">Start Quiz</button>
+    </div>
+    <div id="quizScreen" class="hidden">
+      <div id="question"></div>
+      <button class="answer"></button>
+      <button class="answer"></button>
+      <button class="answer"></button>
+      <button class="answer"></button>
+      <div id="timer">Time left: 60 seconds</div>
+      <div id="scoreDisplay">Score: <span id="score">0</span></div>
+    </div>
+    <div id="endScreen" class="hidden">
+      <div>
+        <h2 id="game-over">Game Over!</h2>
+        <p>Improve Your knowledge by playing it again and again.</p>
+        <h3>
+          <p id="endMessage"></p>
+        </h3>
+        <h3><span id="finalScore"></span></h3>
+      </div>
+      <button id="playAgain">Play Again</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
